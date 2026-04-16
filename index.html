@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="es" data-font-size="normal">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Almas en Ruta — Peregrinación y Cultura Europa 2026. Roma y París. 11 días de fe, cultura y corazón. Viaja con acompañamiento espiritual.">
+    <meta name="keywords"
+        content="peregrinación, Roma, París, viajes religiosos, Vaticano, Asís, Carlo Acutis, viajes de fe, Europa 2026">
+    <meta name="author" content="Almas en Ruta">
+    <title>Almas en Ruta — Peregrinaciones y Viajes de Fe</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23C8932E'/><path d='M50 25 C35 35, 30 55, 50 75 C70 55, 65 35, 50 25Z' fill='white' opacity='0.9'/></svg>">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- ============================================
+         VIEW: HOME (Landing page)
+         ============================================ -->
+    <div id="view-home" class="app-view active">
+
+        <!-- TOP BAR -->
+        <div class="top-bar" role="complementary" aria-label="Información de contacto">
+            <div class="container">
+                <div class="top-bar-left">
+                    <a href="tel:+527226746796" aria-label="Llamar al Contact Center">
+                        <i data-lucide="phone"></i> +52 722 674 6796
+                    </a>
+                    <a href="mailto:contacto@almasenruta.com" aria-label="Enviar correo electrónico">
+                        <i data-lucide="mail"></i> contacto@almasenruta.com
+                    </a>
+                </div>
+                <div class="top-bar-right">
+                    <span class="top-bar-badge">
+                        <i data-lucide="heart"></i>
+                        Más de 30 peregrinos nos han acompañado
+                    </span>
+                    <div class="font-toggle" role="group" aria-label="Cambiar tamaño de texto">
+                        <button class="font-toggle-btn" data-size="small" aria-label="Texto pequeño"
+                            aria-pressed="false">A-</button>
+                        <button class="font-toggle-btn active" data-size="normal" aria-label="Texto normal"
+                            aria-pressed="true">A</button>
+                        <button class="font-toggle-btn" data-size="large" aria-label="Texto grande"
+                            aria-pressed="false">A+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HEADER -->
+        <header class="header" role="banner">
+            <div class="container">
+                <a href="#" class="logo" aria-label="Almas en Ruta — Inicio">
+                    <img src="assets/images/almas-logo.png" alt="Logo Almas en Ruta" class="logo-icon">
+                    <div class="logo-text">
+                        <span class="logo-name">Almas en Ruta</span>
+                        <span class="logo-tagline">Viajes que transforman el alma</span>
+                    </div>
+                </a>
+
+                <nav id="main-nav" class="nav" role="navigation" aria-label="Navegación principal">
+                    <ul class="nav-list">
+                        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                        <li><a href="#destino" class="nav-link">Peregrinaciones</a></li>
+                        <li><a href="#itinerario" class="nav-link">Itinerario</a></li>
+                        <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                    <button class="nav-portal-btn" id="nav-portal-btn" aria-label="Acceder al portal del viajero">
+                        <i data-lucide="user"></i> Mi Portal
+                    </button>
+                </nav>
+
+                <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"
+                    aria-controls="main-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div id="nav-overlay" class="nav-overlay"></div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio" aria-label="Encabezado principal">
+            <div class="hero-bg">
+                <img src="assets/images/hero-roma-paris.png" alt="Vista de la Basílica de San Pedro al atardecer"
+                    loading="eager">
+            </div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="compass"></i> Peregrinación Europa 2026
+                </div>
+
+                <h1>Roma & París</h1>
+                <p class="hero-subtitle">
+                    Una experiencia de <strong>11 días</strong> que transforma el alma.
+                    Fe, cultura y corazón en un solo viaje.
+                </p>
+
+                <div class="hero-dates">
+                    <span><i data-lucide="calendar"></i> 24 Sep — 4 Oct 2026</span>
+                    <span><i data-lucide="plane"></i> Desde CDMX</span>
+                    <span><i data-lucide="users"></i> Cupo: 27 personas</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#reservar" class="btn btn-primary btn-lg">
+                        <span class="btn-icon"><i data-lucide="heart"></i></span> Quiero Apartar Mi Lugar
+                    </a>
+                    <a href="#itinerario" class="btn btn-ghost btn-lg">
+                        <span class="btn-icon"><i data-lucide="map"></i></span> Ver Itinerario Completo
+                    </a>
+                </div>
+
+                <p class="hero-helpline">
+                    <i data-lucide="phone" class="icon-sm"></i>
+                    ¿Tiene dudas? Llámenos con confianza:
+                    <a href="tel:+52 722 674 6796">+52 722 674 6796</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT -->
+        <main id="main-content">
+
+            <!-- COUNTDOWN -->
+            <section class="section-alt" aria-label="Cuenta regresiva">
+                <div class="container text-center">
+                    <p class="countdown-label">La peregrinación comienza en</p>
+                    <div id="countdown" class="countdown-timer"></div>
+                </div>
+            </section>
+
+            <!-- SPIRITUAL QUOTE -->
+            <section class="section" aria-label="Reflexión espiritual">
+                <div class="container">
+                    <div class="spiritual-quote reveal">
+                        <div class="spiritual-quote-icon">
+                            <i data-lucide="bird" class="icon-xl"></i>
+                        </div>
+                        <blockquote>"Viajamos juntos, regresamos transformados."</blockquote>
+                        <cite>— Almas en Ruta</cite>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WHY THIS TRIP -->
+            <section class="section section-alt" id="destino" aria-label="¿Por qué este viaje?">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>¿Por Qué Este Viaje?</h2>
+                        <p class="section-subtitle">
+                            Una oportunidad única para visitar algunos de los lugares más sagrados
+                            y culturales de Europa en un solo recorrido.
+                        </p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card reveal delay-1">
+                            <div class="feature-icon"><i data-lucide="crown"></i></div>
+                            <h3>Audiencia Papal</h3>
+                            <p>Viva un encuentro único con el Papa en el Vaticano. Un momento de profunda
+                                espiritualidad que recordará toda la vida.</p>
+                        </div>
+
+                        <div class="feature-card reveal delay-2">
+                            <div class="feature-icon"><i data-lucide="cross"></i></div>
+                            <h3>Carlo Acutis</h3>
+                            <p>Visite la tumba del Beato Carlo Acutis en Asís, un lugar de gran significado
+                                para la fe contemporánea.</p>
+                        </div>
+
+                        <div class="feature-card reveal delay-3">
+                            <div class="feature-icon"><i data-lucide="church"></i></div>
+                            <h3>Misa en San Pedro</h3>
+                            <p>Participe en la Santa Misa en la Basílica de San Pedro, el corazón de la
+                                cristiandad, con nuestro grupo.</p>
+                        </div>
+
+                        <div class="feature-card reveal delay-4">
+                            <div class="feature-icon"><i data-lucide="landmark"></i></div>
+                            <h3>París Emblemático</h3>
+                            <p>La Torre Eiffel, la Corona de Espinas en Notre Dame, el Louvre y la magia
+                                de Disneyland en un recorrido inolvidable.</p>
+                        </div>
+
+                        <div class="feature-card reveal delay-5">
+                            <div class="feature-icon"><i data-lucide="users"></i></div>
+                            <h3>Grupo Pequeño</h3>
+                            <p>Máximo de 27 personas para una experiencia íntima, con acompañamiento
+                                personalizado de inicio a fin.</p>
+                        </div>
+
+                        <div class="feature-card reveal delay-5">
+                            <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                            <h3>Viaje Seguro</h3>
+                            <p>Seguro de viaje incluido, traslados organizados y asesoría completa antes,
+                                durante y después del viaje.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GALLERY -->
+            <section class="section" aria-label="Galería de destinos">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>Nuestros Destinos</h2>
+                        <p class="section-subtitle">Roma, Asís y París — Dos países, una experiencia
+                            que transforma el alma</p>
+                    </div>
+
+                    <div class="gallery-grid reveal">
+                        <div class="gallery-item" aria-label="Ver imagen de Roma - Coliseo">
+                            <img src="assets/images/roma-coliseo.png"
+                                alt="El Coliseo Romano al atardecer con luz dorada" loading="lazy">
+                        </div>
+                        <div class="gallery-item" aria-label="Ver imagen de Notre Dame">
+                            <img src="assets/images/notre-dame.png" alt="Catedral de Notre Dame en París"
+                                loading="lazy">
+                        </div>
+                        <div class="gallery-item" aria-label="Ver imagen de la Torre Eiffel">
+                            <img src="assets/images/paris-eiffel.png" alt="Torre Eiffel de París al atardecer"
+                                loading="lazy">
+                        </div>
+                        <div class="gallery-item" aria-label="Ver imagen de Asís">
+                            <img src="assets/images/asisi-basilica.png"
+                                alt="Basílica de San Francisco de Asís en la campiña italiana" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Modal -->
+            <div id="gallery-modal" class="modal-overlay" role="dialog" aria-label="Vista ampliada de imagen">
+                <div class="modal-content modal-content--gallery">
+                    <button id="gallery-modal-close" class="modal-close-btn" aria-label="Cerrar imagen">
+                        <i data-lucide="x"></i>
+                    </button>
+                    <img id="gallery-modal-img" src="" alt="" class="modal-gallery-img">
+                </div>
+            </div>
+
+            <!-- ROUTE MAP -->
+            <section class="section section-alt" aria-label="Ruta general del viaje">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>Ruta del Viaje</h2>
+                    </div>
+                    <div class="route-wrapper reveal">
+                        <div class="route-flow">
+                            <span class="route-stop">
+                                <i data-lucide="map-pin" class="icon-sm"></i> México
+                            </span>
+                            <i data-lucide="arrow-right" class="route-arrow"></i>
+                            <span class="route-stop">
+                                <i data-lucide="map-pin" class="icon-sm"></i> Madrid
+                                <small>(escala)</small>
+                            </span>
+                            <i data-lucide="arrow-right" class="route-arrow"></i>
+                            <span class="route-stop route-stop--highlight">
+                                <i data-lucide="church" class="icon-sm"></i> Roma
+                                <small>5 noches</small>
+                            </span>
+                            <i data-lucide="arrow-right" class="route-arrow"></i>
+                            <span class="route-stop route-stop--highlight">
+                                <i data-lucide="landmark" class="icon-sm"></i> París
+                                <small>3 noches</small>
+                            </span>
+                            <i data-lucide="arrow-right" class="route-arrow"></i>
+                            <span class="route-stop">
+                                <i data-lucide="map-pin" class="icon-sm"></i> México
+                            </span>
+                        </div>
+                        <p class="route-description">
+                            Dos destinos icónicos en un solo viaje — 11 días de fe, cultura y corazón
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ITINERARY -->
+            <section class="section" id="itinerario" aria-label="Itinerario día a día">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>Itinerario Día a Día</h2>
+                        <p class="section-subtitle">Siga cada momento de esta experiencia espiritual y cultural</p>
+                    </div>
+
+                    <div class="itinerary-list reveal">
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">1</div>
+                                <span class="itinerary-day-date">24 Sep</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Salida desde Ciudad de México</h4>
+                                <p>Vuelo desde Ciudad de México con destino a Roma, con escala en Madrid.
+                                    ¡Comienza la aventura!</p>
+                                <span class="itinerary-tag"><i data-lucide="plane"></i> Vuelo internacional</span>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">2</div>
+                                <span class="itinerary-day-date">25 Sep</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Llegada a Roma</h4>
+                                <p>Llegada a Roma, traslado al hotel, bienvenida y tiempo de descanso para
+                                    reponerse del viaje.</p>
+                                <span class="itinerary-tag"><i data-lucide="bed-double"></i> Check-in y descanso</span>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">3</div>
+                                <span class="itinerary-day-date">26 Sep</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Roma Imperial — Coliseo y Fontana di Trevi</h4>
+                                <p>Recorrido por el Coliseo, Foro Romano, Fontana di Trevi, Plaza Navona
+                                    y la famosa Boca de la Verdad.</p>
+                                <span class="itinerary-tag"><i data-lucide="columns-3"></i> Roma histórica</span>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">4</div>
+                                <span class="itinerary-day-date">27 Sep</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Santa Misa en San Pedro y Vaticano</h4>
+                                <p>Santa Misa en la Basílica de San Pedro y recorrido por la Ciudad del Vaticano.
+                                    Un momento de profunda espiritualidad.</p>
+                                <span class="itinerary-tag"><i data-lucide="church"></i> Experiencia espiritual</span>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">5</div>
+                                <span class="itinerary-day-date">28 Sep</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Excursión a Asís — Carlo Acutis</h4>
+                                <p>Excursión a la ciudad de Asís. Visita a la tumba del Beato Carlo Acutis
+                                    y la Basílica de San Francisco.</p>
+                                <span class="itinerary-tag"><i data-lucide="bird"></i> Peregrinación espiritual</span>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">6</div>
+                                <span class="itinerary-day-date">29 Sep</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Museos Vaticanos y Capilla Sixtina</h4>
+                                <p>Visita guiada por los Museos Vaticanos, la impresionante Capilla Sixtina,
+                                    Castel Sant'Angelo y tarde libre para explorar.</p>
+                                <span class="itinerary-tag"><i data-lucide="palette"></i> Arte y cultura</span>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">7</div>
+                                <span class="itinerary-day-date">30 Sep</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Audiencia Papal y Vuelo a París</h4>
+                                <p>Asistencia a la Audiencia Papal en Roma. Por la tarde, traslado al
+                                    aeropuerto y vuelo nocturno a París.</p>
+                                <span class="itinerary-tag"><i data-lucide="crown"></i> Audiencia Papal</span>
+                                <span class="itinerary-tag"><i data-lucide="plane"></i> Vuelo a París</span>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">8</div>
+                                <span class="itinerary-day-date">1 Oct</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Disneyland París</h4>
+                                <p>Un día completo de diversión y magia en Disneyland París. Perfecto para
+                                    disfrutar y crear recuerdos inolvidables.</p>
+                                <span class="itinerary-tag"><i data-lucide="sparkles"></i> Día de diversión</span>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">9</div>
+                                <span class="itinerary-day-date">2 Oct</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Notre Dame y Torre Eiffel</h4>
+                                <p>Visita a Notre Dame para contemplar la Corona de Espinas, la Torre Eiffel
+                                    al atardecer y un romántico crucero por el río Sena.</p>
+                                <span class="itinerary-tag"><i data-lucide="landmark"></i> París emblemático</span>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">10</div>
+                                <span class="itinerary-day-date">3 Oct</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Louvre, Arco de Triunfo y Campos Elíseos</h4>
+                                <p>Recorrido por el Museo del Louvre, Arco del Triunfo, los famosos
+                                    Campos Elíseos y tarde libre para compras.</p>
+                                <span class="itinerary-tag"><i data-lucide="image"></i> Arte y compras</span>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item" role="button" tabindex="0" aria-expanded="false">
+                            <div class="itinerary-day">
+                                <div class="itinerary-day-number">11</div>
+                                <span class="itinerary-day-date">4 Oct</span>
+                            </div>
+                            <div class="itinerary-content">
+                                <h4>Regreso a Casa</h4>
+                                <p>Vuelo de regreso a México con escala en Madrid. Llegamos a casa con el
+                                    corazón lleno y el alma renovada.</p>
+                                <span class="itinerary-tag"><i data-lucide="plane-landing"></i> Vuelo de regreso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WHAT'S INCLUDED -->
+            <section class="section section-alt" id="incluye" aria-label="¿Qué incluye el viaje?">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>¿Qué Incluye el Paquete?</h2>
+                    </div>
+
+                    <div class="includes-grid reveal">
+                        <div class="includes-card includes-card--yes">
+                            <h3 class="includes-title includes-title--yes">
+                                <i data-lucide="check-circle"></i> Incluye
+                            </h3>
+                            <ul class="includes-list">
+                                <li>
+                                    <span class="list-icon list-icon-success"><i data-lucide="check"></i></span>
+                                    Vuelos redondos México–Europa con escalas
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-success"><i data-lucide="check"></i></span>
+                                    Traslados aeropuerto–hotel en todo momento
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-success"><i data-lucide="check"></i></span>
+                                    Hospedaje en Roma (5 noches) y París (3 noches)
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-success"><i data-lucide="check"></i></span>
+                                    Guía acompañante durante todo el recorrido
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-success"><i data-lucide="check"></i></span>
+                                    Excursión completa a Asís
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-success"><i data-lucide="check"></i></span>
+                                    Seguro de viaje básico incluido
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-success"><i data-lucide="check"></i></span>
+                                    Asesoría pre-viaje y grupo de WhatsApp 24/7
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="includes-card includes-card--no">
+                            <h3 class="includes-title includes-title--no">
+                                <i data-lucide="info"></i> No incluye
+                            </h3>
+                            <ul class="includes-list">
+                                <li>
+                                    <span class="list-icon list-icon-muted"><i data-lucide="minus"></i></span>
+                                    Comidas (libertad de explorar la gastronomía local)
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-muted"><i data-lucide="minus"></i></span>
+                                    Compras personales y souvenirs
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-muted"><i data-lucide="minus"></i></span>
+                                    Traslados dentro de las ciudades
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-muted"><i data-lucide="minus"></i></span>
+                                    Gastos de visa (si aplica)
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-muted"><i data-lucide="minus"></i></span>
+                                    Propinas opcionales
+                                </li>
+                                <li>
+                                    <span class="list-icon list-icon-muted"><i data-lucide="minus"></i></span>
+                                    Upgrade habitación individual (disponible como extra)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRICING & BOOKING -->
+            <section class="section" id="reservar" aria-label="Precio y reservación">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>Aparte Su Lugar</h2>
+                        <p class="section-subtitle">Los lugares se asignan por orden de apartado. ¡Asegure el suyo hoy!
+                        </p>
+                    </div>
+
+                    <div class="pricing-card reveal">
+                        <p class="pricing-label">Inversión por persona</p>
+                        <div class="pricing-amount">$52,000 MXN</div>
+                        <p class="pricing-per">por persona · Todo incluido</p>
+
+                        <div class="pricing-deposit">
+                            <strong>
+                                <i data-lucide="lock"></i>
+                                Congele su precio con solo $25,000 MXN
+                            </strong>
+                            <p>
+                                O reserve su lugar con $5,000 MXN (sin congelar precio)<br>
+                                El resto se paga en cómodas parcialidades
+                            </p>
+                        </div>
+
+                        <a href="https://wa.me/527226746796?text=Hola%2C%20me%20interesa%20la%20peregrinaci%C3%B3n%20a%20Roma%20y%20Par%C3%ADs%202026.%20Quisiera%20apartar%20mi%20lugar."
+                            class="btn btn-primary btn-lg btn-full" target="_blank" rel="noopener noreferrer"
+                            id="btn-reservar-whatsapp">
+                            <span class="btn-icon"><i data-lucide="message-circle"></i></span> Apartar Mi Lugar por
+                            WhatsApp
+                        </a>
+
+                        <p class="pricing-note">
+                            <i data-lucide="phone" class="icon-sm"></i>
+                            También puede llamar al <a href="tel:+52722 674 6796">+52 722 674 6796</a>
+                        </p>
+                    </div>
+
+                    <div class="payment-steps reveal">
+                        <div class="payment-step">
+                            <div class="payment-step-number">1</div>
+                            <h4>Aparte su lugar</h4>
+                            <p>$25,000 MXN para congelar el precio, o $5,000 para reservar.
+                                Transferencia, depósito o efectivo.</p>
+                        </div>
+                        <div class="payment-step">
+                            <div class="payment-step-number">2</div>
+                            <h4>Segundo pago</h4>
+                            <p>50% del total restante, 60 días antes de la salida. Le avisamos con tiempo.</p>
+                        </div>
+                        <div class="payment-step">
+                            <div class="payment-step-number">3</div>
+                            <h4>Saldo completo</h4>
+                            <p>El saldo restante se liquida 30 días antes de la salida. ¡Y a volar!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOR WHOM -->
+            <section class="section section-alt" aria-label="¿Para quién es este viaje?">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>¿Para Quién Es Este Viaje?</h2>
+                    </div>
+
+                    <div class="features-grid for-whom-grid">
+                        <div class="feature-card reveal delay-1">
+                            <div class="feature-icon"><i data-lucide="heart"></i></div>
+                            <h3>Personas de Fe</h3>
+                            <p>Para quienes desean una experiencia espiritual y cultural auténtica en los
+                                lugares más sagrados de Europa.</p>
+                        </div>
+                        <div class="feature-card reveal delay-2">
+                            <div class="feature-icon"><i data-lucide="users"></i></div>
+                            <h3>Familias y Amigos</h3>
+                            <p>Grupos de amigos o familias que quieren viajar organizados, sin preocupaciones
+                                ni complicaciones.</p>
+                        </div>
+                        <div class="feature-card reveal delay-3">
+                            <div class="feature-icon"><i data-lucide="sparkles"></i></div>
+                            <h3>Soñadores</h3>
+                            <p>Para quienes siempre soñaron con conocer Roma y París, con acompañamiento
+                                profesional y con confianza.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS -->
+            <section class="section" id="testimonios" aria-label="Testimonios de peregrinos">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>Lo Que Dicen Nuestros Peregrinos</h2>
+                        <p class="section-subtitle">Ya llevamos a más de 30 personas de nuestra comunidad a Europa</p>
+                    </div>
+
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card reveal delay-1">
+                            <div class="testimonial-stars">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                            <p class="testimonial-quote">Fue el viaje más hermoso de mi vida. Conocer la Basílica
+                                de San Pedro y participar en la Misa fue un sueño hecho realidad. Todo estuvo
+                                perfectamente organizado.</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">MC</div>
+                                <div class="testimonial-info">
+                                    <h4>María del Carmen G.</h4>
+                                    <p>Peregrinación a Roma 2024</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card reveal delay-2">
+                            <div class="testimonial-stars">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                            <p class="testimonial-quote">Viajé sola y nunca me sentí sola. El grupo fue como una
+                                familia. La visita a Asís me cambió la perspectiva de la vida. Repetiría sin dudarlo.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">RL</div>
+                                <div class="testimonial-info">
+                                    <h4>Rosa López M.</h4>
+                                    <p>Peregrinación Europa 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Real photos from previous trips -->
+                    <div class="testimonial-photo-section reveal">
+                        <p class="section-subtitle">Momentos reales de nuestros peregrinos</p>
+                        <div class="testimonial-photo-grid">
+                            <div class="testimonial-photo-item">
+                                <img src="assets/images/testimonial-grupo.png"
+                                    alt="Grupo de peregrinos de Almas en Ruta en el aeropuerto al atardecer"
+                                    loading="lazy">
+                                <span class="testimonial-photo-badge">
+                                    <i data-lucide="camera" class="icon-sm"></i> Foto real
+                                </span>
+                                <div class="testimonial-photo-caption">
+                                    Nuestro grupo de 30 peregrinos en el aeropuerto — Peregrinación Europa 2025
+                                </div>
+                            </div>
+                            <div class="testimonial-photo-item">
+                                <img src="assets/images/testimonial-peregrinos.png"
+                                    alt="Peregrinos de Almas en Ruta caminando con la bandera de México" loading="lazy">
+                                <span class="testimonial-photo-badge">
+                                    <i data-lucide="camera" class="icon-sm"></i> Foto real
+                                </span>
+                                <div class="testimonial-photo-caption">
+                                    Orgullosamente mexicanos en Europa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT / TRUST -->
+            <section class="section section-alt" aria-label="Sobre Almas en Ruta">
+                <div class="container">
+                    <div class="spiritual-quote reveal">
+                        <div class="spiritual-quote-icon">
+                            <i data-lucide="bird" class="icon-xl"></i>
+                        </div>
+                        <blockquote>"Ya llevamos a 30 personas de nuestra comunidad a Roma, Francia, Londres y España.
+                            Sabemos lo que significa organizar un viaje con el corazón."</blockquote>
+                        <cite>— Almas en Ruta</cite>
+                        <div class="stats-row">
+                            <div class="stats-item">
+                                <strong class="stats-number">30+</strong>
+                                Peregrinos felices
+                            </div>
+                            <div class="stats-item">
+                                <strong class="stats-number">4</strong>
+                                Países visitados
+                            </div>
+                            <div class="stats-item">
+                                <strong class="stats-number">100%</strong>
+                                Satisfacción
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRÓXIMOS VIAJES -->
+            <section class="section trips-section" id="viajes" aria-label="Próximos viajes">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2>Próximos Viajes</h2>
+                        <p class="section-subtitle">Explora nuestros destinos y registra tu interés</p>
+                    </div>
+                    <div id="trips-list" class="reveal" style="max-width: 700px; margin: 0 auto;">
+                        <!-- Rendered dynamically by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA FINAL -->
+            <section class="section section-dark text-center" id="contacto" aria-label="Llamada a la acción final">
+                <div class="container">
+                    <div class="reveal">
+                        <h2 class="cta-title">¿Listo Para Esta Experiencia?</h2>
+                        <p class="cta-subtitle">
+                            Los lugares se agotan rápido. Escríbanos hoy y aparte su lugar
+                            en esta peregrinación que transformará su vida.
+                        </p>
+
+                        <div class="cta-buttons">
+                            <a href="https://wa.me/527226746796?text=Hola%2C%20quiero%20información%20sobre%20la%20peregrinación%20Roma%20y%20París%202026."
+                                class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer"
+                                id="btn-cta-whatsapp">
+                                <span class="btn-icon"><i data-lucide="message-circle"></i></span> Escribir por WhatsApp
+                            </a>
+                            <a href="tel:+527226746796" class="btn btn-outline btn-lg btn-outline-light"
+                                id="btn-cta-phone">
+                                <span class="btn-icon"><i data-lucide="phone"></i></span> Llamar Ahora
+                            </a>
+                        </div>
+
+                        <p class="cta-schedule">
+                            Horario de atención: Lunes a Viernes de 9:00 a 18:00 hrs · Sábados de 9:00 a 14:00 hrs
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <div class="footer-logo-row">
+                            <img src="assets/images/almas-logo.png" alt="" class="logo-icon">
+                            <span class="logo-name">Almas en Ruta</span>
+                        </div>
+                        <p>Organizamos peregrinaciones y viajes de fe a los lugares más sagrados del mundo.
+                            Viajamos juntos, regresamos transformados.</p>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-heading">Navegación</h4>
+                        <div class="footer-links">
+                            <a href="#inicio"><i data-lucide="home"></i> Inicio</a>
+                            <a href="#destino"><i data-lucide="compass"></i> Peregrinaciones</a>
+                            <a href="#itinerario"><i data-lucide="map"></i> Itinerario</a>
+                            <a href="#testimonios"><i data-lucide="message-square"></i> Testimonios</a>
+                            <a href="#contacto"><i data-lucide="send"></i> Contacto</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-heading">Viaje 2026</h4>
+                        <div class="footer-links">
+                            <a href="#destino"><i data-lucide="globe"></i> Roma & París</a>
+                            <a href="#itinerario"><i data-lucide="calendar"></i> Itinerario día a día</a>
+                            <a href="#incluye"><i data-lucide="check-circle"></i> ¿Qué incluye?</a>
+                            <a href="#reservar"><i data-lucide="ticket"></i> Apartar lugar</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-heading">Contacto</h4>
+                        <div class="footer-links">
+                            <a href="tel:+527226746796"><i data-lucide="phone"></i> +52 722 674 6796</a>
+                            <a href="mailto:contacto@almasenruta.com"><i data-lucide="mail"></i>
+                                contacto@almasenruta.com</a>
+                            <a href="https://wa.me/527226746796" target="_blank" rel="noopener noreferrer">
+                                <i data-lucide="message-circle"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 Almas en Ruta — Peregrinaciones y Viajes de Fe. Todos los derechos reservados.</p>
+                    <p style="margin-top: 8px;">
+                        <span id="footer-admin-link"
+                            style="color: rgba(253,248,240,0.2); font-size: 0.8rem; cursor: pointer; border-bottom: 1px dashed rgba(253,248,240,0.15);">⚙
+                            Panel administrativo</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- WHATSAPP FLOATING BUTTON -->
+        <div class="whatsapp-float" aria-label="Contactar por WhatsApp">
+            <span class="whatsapp-label">¿Necesita ayuda?</span>
+            <a href="https://wa.me/527226746796?text=Hola%2C%20me%20interesa%20la%20peregrinaci%C3%B3n%20a%20Roma%20y%20Par%C3%ADs%202026."
+                class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Abrir chat de WhatsApp"
+                id="whatsapp-float-btn">
+                <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+            </a>
+        </div>
+
+    </div><!-- /view-home -->
+
+    <!-- ============================================
+         VIEW: TRIP DETAIL
+         ============================================ -->
+    <div id="view-trip-detail" class="app-view">
+        <!-- Rendered dynamically by JS -->
+    </div>
+
+    <!-- ============================================
+         VIEW: LOGIN (Traveler)
+         ============================================ -->
+    <div id="view-login" class="app-view">
+        <!-- Rendered dynamically by JS -->
+    </div>
+
+    <!-- ============================================
+         VIEW: TRAVELER DASHBOARD
+         ============================================ -->
+    <div id="view-traveler" class="app-view">
+        <!-- Rendered dynamically by JS -->
+    </div>
+
+    <!-- ============================================
+         VIEW: ADMIN LOGIN
+         ============================================ -->
+    <div id="view-admin-login" class="app-view">
+        <!-- Rendered dynamically by JS -->
+    </div>
+
+    <!-- ============================================
+         VIEW: ADMIN DASHBOARD
+         ============================================ -->
+    <div id="view-admin" class="app-view">
+        <!-- Rendered dynamically by JS -->
+    </div>
+
+    <!-- Scripts: Lucide CDN first, then main.js -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="assets/js/main.js" defer></script>
+
+</body>
+
+</html>
